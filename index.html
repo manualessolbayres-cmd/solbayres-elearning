@@ -17,7 +17,6 @@
   }
   body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); min-height: 100vh; font-size: 14px; }
 
-  /* AUTH */
   #auth-screen { min-height:100vh; display:flex; align-items:center; justify-content:center; padding:2rem; }
   .auth-card { width:100%; max-width:420px; background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:2.5rem; }
   .auth-logo { display:flex; align-items:center; gap:10px; margin-bottom:2rem; }
@@ -42,7 +41,6 @@
   .msg.error { background:rgba(231,76,60,0.15); color:#e74c3c; border:1px solid rgba(231,76,60,0.3); display:block; }
   .msg.success { background:rgba(46,204,113,0.15); color:#2ecc71; border:1px solid rgba(46,204,113,0.3); display:block; }
 
-  /* LAYOUT */
   #app-screen { display:none; min-height:100vh; }
   .sidebar { position:fixed; left:0; top:0; bottom:0; width:220px; background:var(--surface); border-right:1px solid var(--border); display:flex; flex-direction:column; z-index:10; }
   .sidebar-logo { padding:1.4rem 1.2rem 1rem; display:flex; align-items:center; gap:10px; border-bottom:1px solid var(--border); }
@@ -65,13 +63,11 @@
   .btn-logout:hover { color:var(--danger); }
   .btn-logout svg { width:15px; height:15px; }
 
-  /* MAIN */
   .main { margin-left:220px; padding:2rem; min-height:100vh; }
   .page-header { margin-bottom:2rem; }
   .page-title { font-size:22px; font-weight:600; letter-spacing:-0.5px; }
   .page-subtitle { color:var(--muted); font-size:13px; margin-top:2px; }
 
-  /* STATS */
   .stats-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:14px; margin-bottom:2rem; }
   .stat-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:1.2rem; }
   .stat-label { font-size:11px; color:var(--muted); font-weight:500; letter-spacing:0.5px; text-transform:uppercase; margin-bottom:8px; }
@@ -80,13 +76,12 @@
   .stat-accent { color:var(--accent); }
   .stat-success { color:var(--success); }
 
-  /* CURSOS GRID */
   .section-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:1rem; }
   .section-title { font-size:15px; font-weight:600; }
   .cursos-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(230px,1fr)); gap:14px; }
   .curso-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; cursor:pointer; transition:all 0.2s; }
   .curso-card:hover { border-color:var(--border2); transform:translateY(-2px); }
-  .curso-thumb { width:100%; height:130px; background:var(--surface2); display:flex; align-items:center; justify-content:center; font-size:36px; position:relative; overflow:hidden; }
+  .curso-thumb { width:100%; height:130px; background:var(--surface2); display:flex; align-items:center; justify-content:center; font-size:42px; position:relative; overflow:hidden; }
   .curso-thumb img { width:100%; height:100%; object-fit:cover; }
   .curso-thumb-overlay { position:absolute; inset:0; background:rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; opacity:0; transition:opacity 0.2s; }
   .curso-card:hover .curso-thumb-overlay { opacity:1; }
@@ -105,11 +100,9 @@
   .badge-muted { background:var(--surface2); color:var(--muted); }
   .badge-danger { background:rgba(231,76,60,0.15); color:var(--danger); }
 
-  /* PAGES */
   .panel-page { display:none; }
   .panel-page.active { display:block; }
 
-  /* TABLA */
   .table-wrap { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; }
   table { width:100%; border-collapse:collapse; }
   th { padding:10px 16px; font-size:11px; font-weight:500; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; text-align:left; background:var(--surface2); border-bottom:1px solid var(--border); }
@@ -121,7 +114,6 @@
   .btn-sm.danger:hover { border-color:var(--danger); color:var(--danger); }
   .btn-sm.success { border-color:rgba(46,204,113,0.4); color:var(--success); }
 
-  /* MODAL */
   .modal-backdrop { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.75); z-index:100; align-items:center; justify-content:center; padding:1rem; overflow-y:auto; }
   .modal-backdrop.open { display:flex; }
   .modal { background:var(--surface); border:1px solid var(--border2); border-radius:16px; padding:2rem; width:100%; max-width:500px; margin:auto; }
@@ -129,11 +121,7 @@
   .modal-footer { display:flex; gap:10px; margin-top:1.5rem; }
   .modal-footer .btn { flex:1; }
 
-  /* CURSO VIEWER */
-  #page-curso-viewer { display:none; }
-  #page-curso-viewer.active { display:block; }
   .viewer-layout { display:grid; grid-template-columns:1fr 300px; gap:1.5rem; align-items:start; }
-  .viewer-main { }
   .viewer-sidebar { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; position:sticky; top:1rem; }
   .viewer-sidebar-header { padding:1rem; border-bottom:1px solid var(--border); font-size:13px; font-weight:600; }
   .modulo-item { display:flex; align-items:center; gap:10px; padding:10px 1rem; border-bottom:1px solid var(--border); cursor:pointer; transition:background 0.15s; }
@@ -147,25 +135,13 @@
   .modulo-titulo { font-size:12px; font-weight:500; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
   .modulo-tipo { font-size:11px; color:var(--muted); }
 
-  /* VIDEO PLAYER */
   .video-container { width:100%; aspect-ratio:16/9; background:#000; border-radius:var(--radius); overflow:hidden; margin-bottom:1rem; }
   .video-container iframe { width:100%; height:100%; border:none; }
-
-  /* PDF VIEWER */
   .pdf-container { width:100%; height:600px; border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); margin-bottom:1rem; }
   .pdf-container iframe { width:100%; height:100%; border:none; }
 
-  /* YOUTUBE THUMBNAIL */
-  .yt-thumb { width:100%; aspect-ratio:16/9; position:relative; cursor:pointer; border-radius:var(--radius); overflow:hidden; margin-bottom:1rem; }
-  .yt-thumb img { width:100%; height:100%; object-fit:cover; }
-  .yt-thumb-play { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4); transition:background 0.2s; }
-  .yt-thumb:hover .yt-thumb-play { background:rgba(0,0,0,0.2); }
-  .yt-play-icon { width:64px; height:64px; background:rgba(232,160,32,0.9); border-radius:50%; display:flex; align-items:center; justify-content:center; }
-  .yt-play-icon svg { width:28px; height:28px; fill:#0f1117; margin-left:4px; }
-
   .content-title { font-size:18px; font-weight:600; margin-bottom:0.5rem; }
   .content-desc { color:var(--muted); font-size:13px; margin-bottom:1.5rem; line-height:1.6; }
-
   .nav-modulos { display:flex; gap:10px; margin-top:1rem; }
   .nav-modulos .btn { width:auto; padding:10px 20px; }
 
@@ -177,16 +153,8 @@
 
   select.form-input { appearance:none; }
   textarea.form-input { resize:vertical; min-height:80px; }
-
-  .modulo-tipo-icon { font-size:14px; }
-
   .empty-state { text-align:center; padding:3rem 1rem; color:var(--muted); }
   .empty-state-icon { font-size:40px; margin-bottom:1rem; }
-  .empty-state-text { font-size:14px; }
-
-  .curso-actions { display:flex; gap:8px; margin-top:1rem; }
-  .curso-actions .btn-sm { flex:1; text-align:center; }
-
   .tag { display:inline-flex; padding:3px 10px; border-radius:20px; font-size:11px; background:var(--surface2); color:var(--muted); margin-right:4px; }
 </style>
 </head>
@@ -267,7 +235,6 @@
   </nav>
 
   <main class="main">
-
     <!-- DASHBOARD -->
     <div class="panel-page active" id="page-dashboard">
       <div class="page-header">
@@ -347,7 +314,6 @@
       <div class="table-wrap"><table><thead><tr><th>#</th><th>Título</th><th>Tipo</th><th>URL</th><th>Acciones</th></tr></thead>
       <tbody id="admin-modulos-tbody"><tr><td colspan="5" style="color:var(--muted);text-align:center;padding:2rem;">Sin módulos aún.</td></tr></tbody></table></div>
     </div>
-
   </main>
 </div>
 
@@ -408,6 +374,7 @@
 <script>
 const SUPABASE_URL = 'https://ohbitiyimfjyiybmcvkib.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9oYml0eWltZmp5aXlibWN2a2liIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3OTYzNzIsImV4cCI6MjA5MjM3MjM3Mn0.toit2WtZtZgvj1XVI9iK90Jj41NWsdVl-li6fQWrARI';
+
 const { createClient } = supabase;
 const sb = createClient(SUPABASE_URL, SUPABASE_KEY);
 
@@ -419,7 +386,6 @@ let editingCursoId = null, adminCursoId = null;
 const ICONOS = { 'Microsoft Office':'📊','Seguridad':'🔒','Técnico':'🔧','Administrativo':'📋','Otro':'📚' };
 const TIPO_ICON = { video:'▶', pdf:'📄', presentacion:'📑' };
 
-// ==================== INIT ====================
 async function init() {
   const { data: { session } } = await sb.auth.getSession();
   if (session) { await loadUserProfile(session.user); showApp(); }
@@ -455,29 +421,25 @@ async function logout() {
   showAuth();
 }
 
-// ==================== DATA ====================
 async function loadDashboard() {
   const { data: cursos } = await sb.from('cursos').select('*, modulos(count)').eq('activo', true).order('orden');
   const { data: progreso } = await sb.from('progreso').select('*').eq('user_id', currentUser.id);
   allCursos = cursos || [];
   allProgreso = progreso || [];
-
   document.getElementById('stat-total').textContent = allCursos.length;
   document.getElementById('stat-iniciados').textContent = allProgreso.length;
   document.getElementById('stat-aprobados').textContent = allProgreso.filter(p=>p.aprobado).length;
-
   renderCursosGrid(allCursos, allProgreso, 'dashboard-cursos', 4);
   renderCursosGrid(allCursos, allProgreso, 'all-cursos');
   renderProgresoTable();
   if (currentProfile?.rol === 'admin') { loadAdminUsuarios(); loadAdminCursosTable(); }
 }
 
-// ==================== CURSOS GRID ====================
 function renderCursosGrid(cursos, progreso, targetId, limit) {
   const container = document.getElementById(targetId);
   const lista = limit ? cursos.slice(0, limit) : cursos;
   if (!lista.length) {
-    container.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="empty-state-icon">📚</div><div class="empty-state-text">No hay cursos disponibles aún.</div></div>';
+    container.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="empty-state-icon">📚</div><div style="color:var(--muted);font-size:13px;">No hay cursos disponibles aún.</div></div>';
     return;
   }
   container.innerHTML = lista.map(c => {
@@ -491,45 +453,34 @@ function renderCursosGrid(cursos, progreso, targetId, limit) {
     const icono = ICONOS[c.categoria] || '📚';
     const thumb = c.imagen_url
       ? `<div class="curso-thumb"><img src="${c.imagen_url}" alt="${c.titulo}"><div class="curso-thumb-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div></div></div>`
-      : `<div class="curso-thumb" style="font-size:42px">${icono}<div class="curso-thumb-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div></div></div>`;
-    return `<div class="curso-card" onclick="openCurso(${c.id})">
-      ${thumb}
+      : `<div class="curso-thumb">${icono}<div class="curso-thumb-overlay"><div class="play-btn"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div></div></div>`;
+    return `<div class="curso-card" onclick="openCurso(${c.id})">${thumb}
       <div class="curso-body">
         <div class="curso-titulo">${c.titulo}</div>
         <div class="curso-desc">${c.descripcion || 'Sin descripción'}</div>
         <div class="progress-bar-wrap"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
         <div class="curso-meta">${badge}<span>${pct}%</span></div>
-      </div>
-    </div>`;
+      </div></div>`;
   }).join('');
 }
 
-// ==================== CURSO VIEWER ====================
 async function openCurso(cursoId) {
   currentCursoId = cursoId;
   currentModuloIdx = 0;
   showPage('curso-viewer');
-
-  const curso = allCursos.find(c => c.id === cursoId);
   const { data: modulos } = await sb.from('modulos').select('*').eq('curso_id', cursoId).eq('activo', true).order('orden');
   const progreso = allProgreso.find(p => p.curso_id === cursoId);
-
   if (!modulos?.length) {
-    document.getElementById('viewer-main-content').innerHTML = `
-      <div class="empty-state"><div class="empty-state-icon">📭</div>
-      <div class="empty-state-text">Este curso no tiene contenido cargado aún.</div></div>`;
+    document.getElementById('viewer-main-content').innerHTML = '<div class="empty-state"><div class="empty-state-icon">📭</div><div style="color:var(--muted);font-size:13px;">Este curso no tiene contenido cargado aún.</div></div>';
     document.getElementById('modulos-list').innerHTML = '';
     return;
   }
-
-  // registrar progreso si no existe
   if (!progreso) {
     const { data: newP } = await sb.from('progreso').insert({ user_id: currentUser.id, curso_id: cursoId, modulo_actual: 0 }).select().single();
     if (newP) allProgreso.push(newP);
   }
-
   renderModulosList(modulos, progreso);
-  renderModuloContent(modulos[currentModuloIdx], modulos, progreso);
+  renderModuloContent(modulos[0], modulos, progreso);
 }
 
 function renderModulosList(modulos, progreso) {
@@ -537,19 +488,17 @@ function renderModulosList(modulos, progreso) {
   document.getElementById('modulos-list').innerHTML = modulos.map((m, i) => {
     const done = i < completadoIdx;
     const active = i === currentModuloIdx;
-    return `<div class="modulo-item ${active?'active':''} ${done?'done':''}" onclick="goToModulo(${i})" id="modulo-item-${i}">
+    return `<div class="modulo-item ${active?'active':''} ${done?'done':''}" onclick="goToModulo(${i})">
       <div class="modulo-num">${done ? '✓' : i+1}</div>
       <div class="modulo-info">
         <div class="modulo-titulo">${m.titulo}</div>
         <div class="modulo-tipo">${TIPO_ICON[m.tipo]} ${m.tipo}</div>
-      </div>
-    </div>`;
+      </div></div>`;
   }).join('');
 }
 
 function goToModulo(idx) {
   currentModuloIdx = idx;
-  // re-fetch modulos
   sb.from('modulos').select('*').eq('curso_id', currentCursoId).eq('activo', true).order('orden').then(({data}) => {
     const progreso = allProgreso.find(p => p.curso_id === currentCursoId);
     renderModulosList(data, progreso);
@@ -567,7 +516,6 @@ function getYouTubeId(url) {
 }
 
 function getDriveEmbedUrl(url) {
-  // Convertir URL de Drive a embed
   const fileId = url.match(/\/d\/([a-zA-Z0-9_-]+)/)?.[1] || url.match(/id=([a-zA-Z0-9_-]+)/)?.[1];
   if (fileId) return `https://drive.google.com/file/d/${fileId}/preview`;
   return url;
@@ -575,47 +523,30 @@ function getDriveEmbedUrl(url) {
 
 function renderModuloContent(modulo, modulos, progreso) {
   const isLast = currentModuloIdx === modulos.length - 1;
-  const completadoIdx = progreso?.modulo_actual || 0;
-  const yaVisto = currentModuloIdx < completadoIdx;
-
   let contentHtml = '';
-
   if (modulo.tipo === 'video') {
     const ytId = getYouTubeId(modulo.url);
-    if (ytId) {
-      contentHtml = `<div class="video-container">
-        <iframe src="https://www.youtube.com/embed/${ytId}?rel=0&modestbranding=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-      </div>`;
-    } else {
-      contentHtml = `<div class="video-container"><iframe src="${modulo.url}" allowfullscreen></iframe></div>`;
-    }
-  } else if (modulo.tipo === 'pdf' || modulo.tipo === 'presentacion') {
+    contentHtml = `<div class="video-container"><iframe src="https://www.youtube.com/embed/${ytId || ''}?rel=0&modestbranding=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe></div>`;
+  } else {
     const embedUrl = getDriveEmbedUrl(modulo.url);
     contentHtml = `<div class="pdf-container"><iframe src="${embedUrl}" allowfullscreen></iframe></div>`;
   }
-
   const btnSiguiente = isLast
     ? `<button class="btn btn-primary" style="width:auto;padding:10px 24px;" onclick="finalizarCurso()">Ir a la evaluación →</button>`
     : `<button class="btn btn-primary" style="width:auto;padding:10px 24px;" onclick="siguienteModulo(${modulos.length})">Siguiente →</button>`;
-
   const btnAnterior = currentModuloIdx > 0
     ? `<button class="btn btn-ghost" style="width:auto;padding:10px 24px;" onclick="goToModulo(${currentModuloIdx-1})">← Anterior</button>`
     : '';
-
   document.getElementById('viewer-main-content').innerHTML = `
     <div class="content-title">${modulo.titulo}</div>
     <div class="content-desc">${modulo.descripcion || ''}</div>
     ${contentHtml}
-    <div class="nav-modulos">
-      ${btnAnterior}
-      ${btnSiguiente}
-    </div>`;
+    <div class="nav-modulos">${btnAnterior}${btnSiguiente}</div>`;
 }
 
 async function siguienteModulo(totalModulos) {
   const nuevoIdx = currentModuloIdx + 1;
   const progreso = allProgreso.find(p => p.curso_id === currentCursoId);
-
   if (!progreso || nuevoIdx > (progreso.modulo_actual || 0)) {
     await sb.from('progreso').upsert({ user_id: currentUser.id, curso_id: currentCursoId, modulo_actual: nuevoIdx, ultima_actualizacion: new Date().toISOString() }, { onConflict: 'user_id,curso_id' });
     const idx = allProgreso.findIndex(p => p.curso_id === currentCursoId);
@@ -628,12 +559,11 @@ async function finalizarCurso() {
   await sb.from('progreso').upsert({ user_id: currentUser.id, curso_id: currentCursoId, completado: true, ultima_actualizacion: new Date().toISOString() }, { onConflict: 'user_id,curso_id' });
   const idx = allProgreso.findIndex(p => p.curso_id === currentCursoId);
   if (idx >= 0) allProgreso[idx].completado = true;
-  alert('🎉 ¡Completaste el curso! En la próxima fase vas a poder hacer la evaluación final acá.');
+  alert('¡Completaste el curso! En la próxima fase vas a poder hacer la evaluación final.');
   showPage('cursos');
   loadDashboard();
 }
 
-// ==================== PROGRESO TABLE ====================
 function renderProgresoTable() {
   const tbody = document.getElementById('progreso-tbody');
   if (!allProgreso.length) {
@@ -650,7 +580,6 @@ function renderProgresoTable() {
   }).join('');
 }
 
-// ==================== ADMIN USUARIOS ====================
 async function loadAdminUsuarios() {
   const { data } = await sb.from('profiles').select('*').order('created_at', { ascending: false });
   const tbody = document.getElementById('usuarios-tbody');
@@ -659,10 +588,8 @@ async function loadAdminUsuarios() {
     <td>${u.nombre}</td><td style="color:var(--muted)">${u.email}</td>
     <td><span class="badge ${u.rol==='admin'?'badge-warning':'badge-info'}">${u.rol}</span></td>
     <td><span class="badge ${u.activo?'badge-success':'badge-muted'}">${u.activo?'Activo':'Inactivo'}</span></td>
-    <td>
-      <button class="btn-sm" onclick="toggleRol('${u.id}','${u.rol}')">Cambiar rol</button>
-      <button class="btn-sm danger" style="margin-left:6px" onclick="toggleActivo('${u.id}',${u.activo})">${u.activo?'Desactivar':'Activar'}</button>
-    </td>
+    <td><button class="btn-sm" onclick="toggleRol('${u.id}','${u.rol}')">Cambiar rol</button>
+    <button class="btn-sm danger" style="margin-left:6px" onclick="toggleActivo('${u.id}',${u.activo})">${u.activo?'Desactivar':'Activar'}</button></td>
   </tr>`).join('');
 }
 
@@ -675,7 +602,6 @@ async function toggleActivo(id, activo) {
   loadAdminUsuarios();
 }
 
-// ==================== ADMIN CURSOS ====================
 async function loadAdminCursosTable() {
   const { data } = await sb.from('cursos').select('*, modulos(count)').order('orden');
   allCursos = data || [];
@@ -688,7 +614,7 @@ async function loadAdminCursosTable() {
     <td><span class="badge ${c.activo?'badge-success':'badge-muted'}">${c.activo?'Activo':'Inactivo'}</span></td>
     <td style="display:flex;gap:6px;flex-wrap:wrap">
       <button class="btn-sm" onclick="editarCurso(${c.id})">Editar</button>
-      <button class="btn-sm success" onclick="gestionarModulos(${c.id},'${c.titulo.replace(/'/g,"\\'")}')">Módulos</button>
+      <button class="btn-sm success" onclick="gestionarModulos(${c.id},'${c.titulo.replace(/'/g,"\\'").replace(/"/g,'\\"')}')">Módulos</button>
       <button class="btn-sm danger" onclick="toggleCursoActivo(${c.id},${c.activo})">${c.activo?'Desactivar':'Activar'}</button>
     </td>
   </tr>`).join('');
@@ -711,7 +637,6 @@ function editarCurso(id) {
   openModal('modal-curso');
 }
 
-// ==================== ADMIN MODULOS ====================
 function gestionarModulos(cursoId, cursoTitulo) {
   adminCursoId = cursoId;
   document.getElementById('admin-modulos-titulo').textContent = 'Módulos: ' + cursoTitulo;
@@ -728,9 +653,7 @@ async function loadAdminModulos() {
     <td>${m.titulo}</td>
     <td><span class="tag">${TIPO_ICON[m.tipo]} ${m.tipo}</span></td>
     <td style="color:var(--muted);font-size:11px;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${m.url}</td>
-    <td style="display:flex;gap:6px">
-      <button class="btn-sm danger" onclick="eliminarModulo(${m.id})">Eliminar</button>
-    </td>
+    <td><button class="btn-sm danger" onclick="eliminarModulo(${m.id})">Eliminar</button></td>
   </tr>`).join('');
 }
 
@@ -747,21 +670,20 @@ function openModalModulo() {
 function updateModuloHelp() {
   const tipo = document.getElementById('mm-tipo').value;
   const helps = {
-    video: '📹 Pegá la URL del video de YouTube. Ej: https://www.youtube.com/watch?v=XXXX',
-    pdf: '📄 Pegá el link de Google Drive. El archivo debe estar compartido como "Cualquier persona con el enlace". Ej: https://drive.google.com/file/d/XXXX/view',
-    presentacion: '📑 Pegá el link de la presentación en Google Drive. Compartila como "Cualquier persona con el enlace".'
+    video: 'Pegá la URL del video de YouTube. Ej: https://www.youtube.com/watch?v=XXXX',
+    pdf: 'Pegá el link de Google Drive. El archivo debe estar compartido como "Cualquier persona con el enlace". Ej: https://drive.google.com/file/d/XXXX/view',
+    presentacion: 'Pegá el link de la presentación en Google Drive compartida como "Cualquier persona con el enlace".'
   };
   document.getElementById('mm-help').textContent = helps[tipo] || '';
   document.getElementById('mm-url').placeholder = tipo === 'video' ? 'https://www.youtube.com/watch?v=...' : 'https://drive.google.com/file/d/.../view';
 }
 
 async function eliminarModulo(id) {
-  if (!confirm('¿Eliminár este módulo?')) return;
+  if (!confirm('¿Eliminar este módulo?')) return;
   await sb.from('modulos').delete().eq('id', id);
   loadAdminModulos();
 }
 
-// ==================== MODALS ====================
 function openModal(id) { document.getElementById(id).classList.add('open'); }
 function closeModal(id) { document.getElementById(id).classList.remove('open'); }
 
@@ -770,7 +692,6 @@ function setMsg(id, text, type) {
   el.textContent = text; el.className = 'msg ' + type;
 }
 
-// ==================== PAGES ====================
 function showPage(name) {
   document.querySelectorAll('.panel-page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
@@ -778,7 +699,6 @@ function showPage(name) {
   if (page) page.classList.add('active');
 }
 
-// ==================== AUTH HANDLERS ====================
 document.getElementById('btn-login').addEventListener('click', async () => {
   const email = document.getElementById('login-email').value.trim();
   const pass = document.getElementById('login-pass').value;
